@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CréaWeb+ - Demander un devis</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><a href="index.html">CréaWeb+</a></h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulaire de demande de devis -->
+  <section class="devis-section">
+    <h2>Demander un devis</h2>
+    <form id="devis-form" action="https://formspree.io/f/yourFormID" method="POST" class="devis-form">
+      <!-- Champ caché pour redirection -->
+      <input type="hidden" name="_redirect" value="https://tonsite.com/merci.html">
+
+      <!-- Champs du formulaire -->
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="projet">Type de projet :</label>
+      <input type="text" id="projet" name="projet" required>
+
+      <label for="budget">Budget estimé :</label>
+      <select id="budget" name="budget" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="moins de 100 000">Moins de 100 000 FCFA</option>
+        <option value="100 000 - 200 000">100 000 à 200 000 FCFA</option>
+        <option value="plus de 200 000">Plus de 200 000 FCFA</option>
+      </select>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <!-- Message de confirmation -->
+    <div id="confirmation-message" style="display:none;">
+      <p>Votre demande a bien été envoyée ! Vous serez redirigé vers la page de confirmation.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CréaWeb+ - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
