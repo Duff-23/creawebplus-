@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CréaWeb+</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CréaWeb+ – Sites web professionnels à Libreville</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header id="header">
-        <div class="logo">CréaWeb+</div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">CréaWeb+</div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#devis">Devis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="hero">
-        <h1>Obtenez un site web professionnel pour votre entreprise !</h1>
-        <a href="#devis" class="btn">Demander un devis</a>
-    </section>
+  <section id="accueil" class="hero">
+    <h1>Obtenez un site web professionnel pour votre entreprise !</h1>
+    <p>CréaWeb+ à Libreville : modernité, performance et visibilité en ligne.</p>
+    <a href="#devis" class="cta-button">Demandez un devis gratuit</a>
+  </section>
 
-    <section id="accueil">
-        <h2>Bienvenue chez CréaWeb+</h2>
-        <p>CréaWeb+ est une agence spécialisée dans la création de sites web professionnels à Libreville.</p>
-        <p>Notre objectif est de booster votre présence en ligne avec un site moderne, rapide et sécurisé.</p>
-        <div class="slogan">Demandez un devis gratuit !</div>
-    </section>
+  <section id="a-propos">
+    <h2>À propos de CréaWeb+</h2>
+    <p>CréaWeb+ est une agence spécialisée dans la création de sites web professionnels à Libreville. Notre objectif est de booster votre présence en ligne avec un site moderne, rapide et sécurisé.</p>
+  </section>
 
-    <section id="services">
-        <h2>Nos Services</h2>
-        <ul>
-            <li>Site vitrine professionnel</li>
-            <li>Nom de domaine (1 an)</li>
-            <li>5 adresses e-mail professionnelles</li>
-            <li>Hébergement sécurisé (1 an)</li>
-            <li>Support & accompagnement</li>
-        </ul>
-        <div class="promo">Offre spéciale : 200 000 FCFA (au lieu de 500 000 FCFA)</div>
-    </section>
+  <section id="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Site vitrine professionnel</li>
+      <li>Nom de domaine (1 an)</li>
+      <li>5 adresses e-mail professionnelles</li>
+      <li>Hébergement sécurisé (1 an)</li>
+      <li>Support & accompagnement</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Téléphone / WhatsApp : +241 066 592 035</p>
-        <p>Email : pregadufren@gmail.com</p>
-        <p>Localisation : Libreville, Mindoubé1</p>
-    </section>
+  <section class="offre-speciale">
+    <h2>Offre Spéciale</h2>
+    <p><strong>200 000 FCFA</strong> <del>500 000 FCFA</del></p>
+  </section>
 
-    <footer>
-        <div class="footer-logo">CréaWeb+</div>
-        <p>&copy; 2025 CréaWeb+. Tous droits réservés.</p>
-    </footer>
+  <section id="devis" class="devis-section">
+    <h2>Demandez un devis gratuit</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="devis-form">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
 
-    <script src="script.js"></script>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="projet">Type de projet :</label>
+      <input type="text" id="projet" name="projet" required>
+
+      <label for="budget">Budget estimé :</label>
+      <select id="budget" name="budget" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="moins de 100 000">Moins de 100 000 FCFA</option>
+        <option value="100 000 - 200 000">100 000 à 200 000 FCFA</option>
+        <option value="plus de 200 000">Plus de 200 000 FCFA</option>
+      </select>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Téléphone / WhatsApp : +241 066 592 035</p>
+    <p>Email : pregadufren@gmail.com</p>
+    <p>Localisation : Libreville, Mindoubé1</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CréaWeb+. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
